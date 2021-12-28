@@ -1,0 +1,39 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Add user by file</title>
+</head>
+<body>
+
+<h1>You can upload new users by file here</h1>
+<h2>Text file should contain rows consisted in 7 fields with "|" separator</h2>
+<h2>1 row - 1 user</h2>
+<h2>Otherwise user shall not be read in future</h2>
+<div th:if="${message}">
+    <h2 th:text="${message}"/>
+</div>
+
+<div>
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <table>
+            <tr>
+                <td>File to upload:</td>
+                <td><input type="file" name="file" accept=".txt"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Upload"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div>
+    <ul>
+        <li th:each="file : ${files}">
+            <a th:href="${file}" th:text="${file}"/>
+        </li>
+    </ul>
+</div>
+<a href="/user">Create a new user by form</a>
+</body>
+</html>

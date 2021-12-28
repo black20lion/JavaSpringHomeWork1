@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Successful user adding by form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>The user was successfully added to the user list</h1>
+<h1>User's attributes are following:</h1>
+<p th:text="'Second name: ' + ${user.secondName}" />
+<p th:text="'First name: ' + ${user.firstName}" />
+<p th:text="'Patronymic: ' + ${user.patronymic}" />
+<p th:text="'Age: ' + ${user.age}" />
+<p th:text="'Salary: ' + ${user.salary}" />
+<p th:text="'E-mail: ' + ${user.eMail}" />
+<p th:text="'Place of work: ' + ${user.workplace}" />
+<a href="/user">Add another user</a>
+</body>
+</html>

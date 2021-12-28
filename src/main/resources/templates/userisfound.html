@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>User is found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+
+<body>
+
+<h1>The user was found</h1>
+
+<h1>User's attributes are following:</h1>
+<p th:text="'Second name: ' + ${userfound.secondNameFound}"/>
+<p th:text="'First name: ' + ${userfound.firstNameFound}"/>
+<p th:text="'Patronymic: ' + ${userfound.patronymic}"/>
+<p th:text="'Age: ' + ${userfound.age}"/>
+<p th:text="'Salary: ' + ${userfound.salary}"/>
+<p th:text="'E-mail: ' + ${userfound.eMail}"/>
+<p th:text="'Place of work: ' + ${userfound.workplace}"/>
+<h1>Request information:</h1>
+<p th:text="'Current time: ' + ${userfound.currentDate}"/>
+<p th:text="'Browser name: ' + ${userfound.userAgent}"/>
+<p></p>
+<a href="/email">Send email to the user</a>
+<p></p>
+<a href="/finduser">Find another user</a>
+</body>
+</html>

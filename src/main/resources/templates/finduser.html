@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Form for user found</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<h1>You can check if the user already exists here</h1>
+
+<form action="#" th:action="@{/finduser}" th:object="${userfound}" method="post" modelAttribute = "userfound">
+    <table>
+        <tr>
+            <td>Second name:</td>
+            <td><input type="text" th:field="*{secondNameFound}" /></td>
+            <td th:if="${#fields.hasErrors('secondNameFound')}" th:errors="*{secondNameFound}">Also Error</td>
+        </tr>
+        <tr>
+            <td>First name:</td>
+            <td><input type="text" th:field="*{firstNameFound}" /></td>
+            <td th:if="${#fields.hasErrors('firstNameFound')}" th:errors="*{firstNameFound}">Yet  another Name Error</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Find"/></td>
+            <td><input type="reset" value="Reset"/></td>
+        </tr>
+    </table>
+</form>
+
+<a href="/user">Create a new user</a>
+</body>
+</html>

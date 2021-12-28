@@ -1,0 +1,8 @@
+Альба|Джессика|Григорьевна|25|15000.0|AJ@alba.com|New York
+asdfasf|fasdf|asdfas|45|0.0|safsf@asdfsf.com|asdfafd
+Masha|Kakasha|asdfsdf|25|0.0|asfs@asdfs.com|asdfa
+Кшиштоф|Влодарчик|Ростиславович|42|50000.0|Kshishtoff@horse.com|Poland
+Hello|World|Worldovich|68|7777.0|world@hello.com|hello
+Морозова|Дарья|Морозовна|24|800.0|DariaMoroz@gmail.com|Journal Department
+Yasha|Varina|Sergeevna|21|10|Yasha@yahooo.com|ddc
+Сахокия|Константин|Леванович|23|0.023|Kos.Sahokia@yandex.ru|Home
